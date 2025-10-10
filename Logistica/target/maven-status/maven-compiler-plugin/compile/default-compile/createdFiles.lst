@@ -1,0 +1,16 @@
+com\mycompany\logistica\UI_Insert.class
+com\mycompany\logistica\modelo\Conductor.class
+com\mycompany\logistica\UI_Insert$1.class
+com\mycompany\logistica\UI_Insert$2.class
+com\mycompany\logistica\UI_Insert$6.class
+com\mycompany\logistica\UI_View.class
+com\mycompany\logistica\dao\ConductorDAO.class
+com\mycompany\logistica\util\BaseDeDatos.class
+com\mycompany\logistica\VentanaView.class
+com\mycompany\logistica\UI_Insert$5.class
+com\mycompany\logistica\VentanaInsert.class
+com\mycompany\logistica\Logistica.class
+com\mycompany\logistica\UI_Insert$4.class
+com\mycompany\logistica\modelo\Vehiculos.class
+com\mycompany\logistica\UI_Insert$3.class
+com\mycompany\logistica\util\ConexionDB.class
