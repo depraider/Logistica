@@ -1,6 +1,8 @@
 package com.mycompany.logistica.dao;
 
 import com.mycompany.logistica.modelo.Conductor;
+import com.mycompany.logistica.modelo.Vehiculos;
+
 import com.mycompany.logistica.util.ConexionDB;
 
 import java.sql.*;
@@ -9,6 +11,7 @@ import java.util.List;
 
 public class ConductorDAO {
 
+    //Gestion de conductores 
     public void insertar(Conductor c) {
         String sql = "INSERT INTO conductor VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection con = ConexionDB.conectar(); PreparedStatement ps = con.prepareStatement(sql)) {
@@ -78,4 +81,54 @@ public class ConductorDAO {
             System.out.println("❌ Error al eliminar: " + e.getMessage());
         }
     }
+    
+   //Fin gestion de conductores 
+
+    
+    // Gestion de vehiculos 
+    
+    /**
+    public void insertarVehiculos(Vehiculos v) {
+        String sql = "INSERT INTO vehiculo VALUES (?, ?, ?, ?)";
+        try (Connection con = ConexionDB.conectar(); PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setString(1, v.getMatricula());
+            ps.setString(2, v.getModelo());
+            ps.setString(3, v.getPotencia());
+            ps.setString(3, v.getTipo());
+
+          
+
+            ps.executeUpdate();
+            System.out.println("✅ Vehiculo insertado correctamente.");
+        } catch (SQLException e) {
+            System.out.println("❌ Error al insertar: " + e.getMessage());
+        }
+    }
+    
+     public List<Vehiculos> listarVehiculos() {
+        List<Vehiculos> listaVehiculo = new ArrayList<>();
+        String sql = "SELECT * FROM conductor";
+        try (Connection con = ConexionDB.conectar(); Statement st = con.createStatement(); ResultSet rs = st.executeQuery(sql)) {
+
+            while (rs.next()) {
+                Vehiculos v = new Vehiculos(
+                        rs.getString("matricula"),
+                        rs.getString("modelo"),
+                        rs.getString("potencia"),
+                        rs.getString("tipo")
+
+                       
+                );
+                listaVehiculo.add(v);
+            }
+        } catch (SQLException e) {
+            System.out.println("❌ Error al listar: " + e.getMessage());
+        }
+        return listaVehiculo;
+    }
+     **/
+    
+    // Fin de gestion de vehiculos 
+    
 }
