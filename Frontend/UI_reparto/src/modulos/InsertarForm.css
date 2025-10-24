@@ -1,0 +1,58 @@
+.insertar-container {
+  min-width: 350px;
+  width: 50%; 
+  margin: 50px auto; 
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.insertar-container h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.message {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.message.ok {
+  color: #064e3b;
+  background: #bbf7d0;
+}
+
+.message.error {
+  color: #7f1d1d;
+  background: #fecaca;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background: #1e3c72;
+  color: white;
+  font-size: 1rem;
+}
+
+.form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

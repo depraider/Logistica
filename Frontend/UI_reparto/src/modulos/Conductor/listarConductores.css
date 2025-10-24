@@ -1,0 +1,74 @@
+.listar-conductores-container {
+  width: 40%; 
+  margin: 50px auto;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.listar-conductores-container h2 {
+  margin-bottom: 16px;
+}
+
+.error {
+  color: #7f1d1d;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.conductores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.conductor-card {
+  border: 2px solid #c00808ff;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #000000ff;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.acciones {
+  display: flex;
+  justify-content: center; /* centrado horizontal */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.acciones button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #1e3c72;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.acciones button.eliminar {
+  background-color: #b91c1c;
+}
+
+.acciones button.cancelar {
+  background-color: #6b7280;
+}
+
+.editar-form {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+}
+
+.editar-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
